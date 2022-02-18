@@ -4,7 +4,7 @@ agent any
     stage('Build') {
       steps{
       echo 'Hello Joey'
-        sh './gradlew build --no-deamon'
+        sh './gradlew build'
         archiveArtifacts artifacts: 'dist/trainSchedule.zip'
       }
     }
